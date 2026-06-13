@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exatas Sem Limites - FME, TF & Poliedro</title>
+  <meta name="description" content="Acesse livros teóricos e resoluções completas de Matemática FME, Tópicos de Física e Poliedro Química. Acesso imediato via Pix.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ==========================================
+       LANDING PAGE (SEÇÃO DE VENDAS)
+       ========================================== -->
+  <section id="section-landing" class="section active">
+    <!-- Navbar -->
+    <header class="landing-navbar">
+      <div class="logo-container">
+        <div class="logo-icon">E</div>
+        <div class="logo-text">EXATAS<span class="gradient-text">SemLimites</span></div>
+      </div>
+      <nav>
+        <button id="btn-goto-student" class="btn btn-secondary">Área do Aluno</button>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <main class="hero">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span>🚀</span> Combo Premium de Exatas 2026
+        </div>
+        <h1 id="landing-hero-title">Conquiste sua vaga na Universidade Pública estudando do jeito certo!</h1>
+        <p id="landing-hero-subtitle">Acesso completo a todas as apostilas, resumos direcionados e mapas mentais de todas as matérias cobradas no ENEM por um pagamento único.</p>
+        
+        <div class="hero-cta-group">
+          <button class="btn btn-primary btn-buy-trigger" id="landing-cta-btn">Garantir Meu Combo por Apenas R$ 24,90</button>
+          <div class="trust-badge-row">
+            <div class="trust-item">
+              <span>★</span> 4.9/5 (1.4k+ avaliações)
+            </div>
+            <div class="trust-item">
+              <span>⚡</span> Liberação automática via Pix
+            </div>
+            <div class="trust-item">
+              <span>🔒</span> Checkout seguro
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="hero-mockup-wrapper">
+          <div class="mockup-header">
+            <div class="mockup-dot"></div>
+            <div class="mockup-dot"></div>
+            <div class="mockup-dot"></div>
+          </div>
+          <div class="mockup-content">
+            <div class="mockup-icon">📚</div>
+            <h3>Portal do Estudante</h3>
+            <p style="margin-top: 8px; font-size: 0.9rem;">ENEM Sem Limites Dashboard</p>
+            <button class="btn btn-primary btn-sm btn-buy-trigger" style="margin-top: 20px;">
+              Liberar Acesso
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Features Section -->
+    <section class="features-section">
+      <h2 class="section-title">O que você vai receber para acelerar sua aprovação</h2>
+      <p class="section-subtitle">Tudo o que você precisa reunido em uma única plataforma, sem mensalidades ou taxas ocultas.</p>
+      
+      <div class="features-grid" id="landing-features-container">
+        <!-- Inserido dinamicamente via JS -->
+      </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing-section">
+      <div class="pricing-card-wrapper">
+        <div class="pricing-card glass-panel">
+          <span class="price-sub">OFERTA DE LANÇAMENTO</span>
+          <h2 id="pricing-product-name" style="margin-top: 10px; font-size: 1.8rem;">ENEM Sem Limites - Combo de Apostilas</h2>
+          
+          <div class="price-tag">
+            <span class="price-main">R$ <span id="pricing-value">24,90</span></span>
+            <p style="margin-top: 5px; font-size: 0.9rem; color: var(--text-muted);">PAGAMENTO ÚNICO - ACESSO VITALÍCIO</p>
+          </div>
+
+          <ul class="benefit-list" id="landing-benefits-container">
+            <!-- Inserido dinamicamente via JS -->
+          </ul>
+
+          <button class="btn btn-primary btn-buy-trigger" style="width: 100%; font-size: 1.1rem; padding: 16px;">
+            Quero Acesso Instantâneo via Pix
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+      <h2 class="section-title" style="text-align: center; margin-bottom: 40px;">Dúvidas Frequentes</h2>
+      <div class="faq-list">
+        <div class="faq-item">
+          <div class="faq-question">Como eu recebo acesso ao material?</div>
+          <div class="faq-answer">Imediatamente após a confirmação do pagamento do Pix de R$ 24,90, a própria plataforma desbloqueia sua tela e dá acesso imediato ao painel do estudante. Você não precisa esperar e-mail de confirmação!</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">Posso baixar as apostilas no meu celular ou computador?</div>
+          <div class="faq-answer">Sim! Todas as apostilas, resumos e mapas mentais estão disponíveis em formato PDF de alta qualidade e contam com um botão de download para você salvar e estudar onde e quando quiser, mesmo sem internet.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">O pagamento é seguro?</div>
+          <div class="faq-answer">Sim, 100% seguro. O pagamento é realizado diretamente via Pix Copia e Cola ou QR Code, utilizando o sistema oficial do Banco Central, garantindo aprovação imediata e segurança total dos seus dados.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">Tenho garantia ou suporte?</div>
+          <div class="faq-answer">Com certeza. Caso tenha qualquer dificuldade para acessar os materiais ou precise de ajuda técnica, basta entrar em contato com o suporte através do e-mail indicado na plataforma.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer style="text-align: center; padding: 40px 0; border-top: 1px solid var(--border-color); color: var(--text-muted); font-size: 0.85rem; position: relative;">
+      <p style="margin-bottom: 10px;">&copy; 2026 ENEM Sem Limites. Todos os direitos reservados. | <a href="#" id="link-privacy-policy" style="color: var(--text-secondary); text-decoration: none; font-weight: 500;">Política de Privacidade</a></p>
+      <button id="btn-admin-gate" style="background: transparent; border: none; cursor: pointer; color: var(--text-muted); position: absolute; bottom: 20px; right: 20px; font-size: 1.1rem;" title="Painel do Administrador">⚙️</button>
+    </footer>
+  </section>
+
+
+  <!-- ==========================================
+       MODAL CHECKOUT PIX
+       ========================================== -->
+  <!-- ==========================================
+       MODAL CHECKOUT PIX (CADASTRO + PAGAMENTO)
+       ========================================== -->
+  <div id="checkout-modal" class="modal-overlay">
+    <div class="modal-container glass-panel">
+      <div class="checkout-header">
+        <h3 style="font-size: 1.15rem;" id="checkout-modal-title">Cadastro de Estudante</h3>
+        <button class="close-modal-btn" id="btn-close-checkout">&times;</button>
+      </div>
+      <div class="checkout-body">
+        
+        <!-- Passo 1: Autenticação (Cadastrar ou Logar) -->
+        <div id="checkout-step-register">
+          <div class="checkout-auth-tabs">
+            <button class="checkout-tab-btn active" id="btn-checkout-tab-register">Cadastrar</button>
+            <button class="checkout-tab-btn" id="btn-checkout-tab-login">Fazer Login</button>
+          </div>
+          
+          <!-- Formulário de Cadastro -->
+          <div id="checkout-sub-register">
+            <p style="font-size: 0.9rem; margin-bottom: 20px; color: var(--text-secondary);">Preencha os dados que você usará para acessar a plataforma após a liberação.</p>
+            <form id="form-checkout-register">
+              <div class="form-group" style="text-align: left;">
+                <label class="form-label" for="checkout-reg-name">Nome Completo</label>
+                <input type="text" id="checkout-reg-name" class="form-input" placeholder="Ex: João da Silva" required>
+              </div>
+              <div class="form-group" style="text-align: left;">
+                <label class="form-label" for="checkout-reg-email">E-mail</label>
+                <input type="email" id="checkout-reg-email" class="form-input" placeholder="Ex: joao@gmail.com" required>
+              </div>
+              <div class="form-group" style="text-align: left; margin-bottom: 25px;">
+                <label class="form-label" for="checkout-reg-password">Crie uma Senha</label>
+                <input type="password" id="checkout-reg-password" class="form-input" placeholder="Digite uma senha..." required>
+              </div>
+              <button type="submit" class="btn btn-primary" style="width: 100%;">
+                Cadastrar e ir para o Pagamento (R$ 24,90)
+              </button>
+            </form>
+          </div>
+
+          <!-- Formulário de Login -->
+          <div id="checkout-sub-login" style="display: none;">
+            <p style="font-size: 0.9rem; margin-bottom: 20px; color: var(--text-secondary);">Faça login para prosseguir para a tela de pagamento do combo.</p>
+            <form id="form-checkout-login">
+              <div class="form-group" style="text-align: left;">
+                <label class="form-label" for="checkout-login-email">E-mail</label>
+                <input type="email" id="checkout-login-email" class="form-input" placeholder="Ex: joao@gmail.com" required>
+              </div>
+              <div class="form-group" style="text-align: left; margin-bottom: 25px;">
+                <label class="form-label" for="checkout-login-password">Senha</label>
+                <input type="password" id="checkout-login-password" class="form-input" placeholder="Sua senha..." required>
+              </div>
+              <button type="submit" class="btn btn-primary" style="width: 100%;">
+                Entrar e ir para o Pagamento (R$ 24,90)
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <!-- Passo 2: Pagamento Pix (inicialmente oculto) -->
+        <div id="checkout-step-payment" style="display: none;">
+          <div class="pix-price-badge">
+            Valor: R$ <span id="checkout-price-val">24,90</span>
+          </div>
+          <p style="font-size: 0.95rem; font-weight: 600; margin-bottom: 15px;" id="checkout-product-name">ENEM Sem Limites</p>
+          
+          <div class="pix-qr-container">
+            <!-- QR Code gerado por canvas via JS -->
+            <canvas id="pix-qr-canvas"></canvas>
+          </div>
+
+          <p class="pix-instructions">Escaneie o QR Code acima com o aplicativo do seu banco ou utilize o código Pix abaixo.</p>
+
+          <div class="pix-copia-cola">
+            <div class="pix-code-text" id="pix-copia-cola-text">Carregando código Pix...</div>
+            <button class="btn-copy" id="btn-copy-pix">Copiar</button>
+          </div>
+
+          <div class="payment-status-row" style="margin-bottom: 15px;">
+            <div class="spinner"></div>
+            <span>Aguardando liberação do administrador...</span>
+          </div>
+          
+          <p style="font-size: 0.8rem; color: var(--text-muted);">Após realizar o pagamento, guarde seus dados de login. Sua conta estará liberada para acesso assim que o administrador aprovar seu cadastro!</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================
+       MODAL DE LOGIN DO ESTUDANTE
+       ========================================== -->
+  <div id="login-modal" class="modal-overlay">
+    <div class="modal-container glass-panel">
+      <div class="checkout-header">
+        <h3 style="font-size: 1.15rem;">Portal do Aluno - Login</h3>
+        <button class="close-modal-btn" id="btn-close-login">&times;</button>
+      </div>
+      <div class="checkout-body">
+        <p style="font-size: 0.95rem; margin-bottom: 20px; color: var(--text-secondary);">Digite seus dados de acesso para entrar na Área do Aluno.</p>
+        
+        <form id="form-student-login">
+          <div class="form-group" style="text-align: left;">
+            <label class="form-label" for="login-email">E-mail</label>
+            <input type="email" id="login-email" class="form-input" placeholder="exemplo@email.com" required>
+          </div>
+          <div class="form-group" style="text-align: left; margin-bottom: 25px;">
+            <label class="form-label" for="login-password">Senha</label>
+            <input type="password" id="login-password" class="form-input" placeholder="Sua senha..." required>
+          </div>
+          
+          <button type="submit" class="btn btn-primary" id="btn-submit-login" style="width: 100%; margin-bottom: 20px;">
+            Entrar na Área do Aluno
+          </button>
+        </form>
+        
+        <p style="font-size: 0.85rem; color: var(--text-muted);">
+          Ainda não tem acesso? 
+          <a href="#" id="link-login-to-checkout" style="color: var(--primary); font-weight: 600; text-decoration: none;">Adquirir o Combo Agora</a>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================
+       MODAL DE POLÍTICA DE PRIVACIDADE
+       ========================================== -->
+  <div id="privacy-modal" class="modal-overlay">
+    <div class="modal-container glass-panel" style="max-width: 600px;">
+      <div class="checkout-header">
+        <h3 style="font-size: 1.15rem;">Política de Privacidade</h3>
+        <button class="close-modal-btn" id="btn-close-privacy">&times;</button>
+      </div>
+      <div class="checkout-body" style="text-align: left; max-height: 400px; overflow-y: auto; padding: 25px; line-height: 1.6;">
+        <h4 style="margin-bottom: 10px; color: var(--text-primary);">1. Coleta de Dados</h4>
+        <p style="font-size: 0.85rem; margin-bottom: 15px; color: var(--text-secondary);">Para liberação do acesso aos materiais, coletamos o seu nome completo, endereço de e-mail e dados de transação do Pix. Esses dados são armazenados localmente e de forma segura, sendo utilizados estritamente para identificação de acesso ao Portal do Aluno.</p>
+        
+        <h4 style="margin-bottom: 10px; color: var(--text-primary);">2. Uso das Informações</h4>
+        <p style="font-size: 0.85rem; margin-bottom: 15px; color: var(--text-secondary);">Os seus dados não serão comercializados, compartilhados ou distribuídos para terceiros sob nenhuma circunstância. A chave do seu e-mail serve unicamente como login para autenticação no nosso site.</p>
+        
+        <h4 style="margin-bottom: 10px; color: var(--text-primary);">3. Segurança e Download dos Livros</h4>
+        <p style="font-size: 0.85rem; margin-bottom: 15px; color: var(--text-secondary);">Os arquivos de apostilas FME, Tópicos de Física e Poliedro Química são disponibilizados para visualização integrada e download. O uso dos materiais é estritamente pessoal e intransferível.</p>
+        
+        <h4 style="margin-bottom: 10px; color: var(--text-primary);">4. Termos de LGPD e Contato</h4>
+        <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 0;">Nos comprometemos a respeitar todos os direitos de privacidade estipulados pela Lei Geral de Proteção de Dados (LGPD). Se você desejar que sua conta seja deletada permanentemente de nossa base, poderá solicitar diretamente ao suporte pelo e-mail do administrador.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================
+       MODAL ACESSO ADMIN
+       ========================================== -->
+  <div id="admin-login-modal" class="modal-overlay">
+    <div class="modal-container glass-panel">
+      <div class="checkout-header">
+        <h3 style="font-size: 1.15rem;">Acesso Restrito Admin</h3>
+        <button class="close-modal-btn" id="btn-close-admin-login">&times;</button>
+      </div>
+      <div class="checkout-body">
+        <p style="font-size: 0.95rem; margin-bottom: 20px; color: var(--text-secondary);">Digite a senha do administrador para acessar o Painel.</p>
+        <div class="form-group" style="text-align: left; margin-bottom: 25px;">
+          <label class="form-label" for="admin-login-password">Senha de Acesso</label>
+          <input type="password" id="admin-login-password" class="form-input" placeholder="Digite a senha..." required>
+        </div>
+        <button class="btn btn-primary" id="btn-submit-admin-login" style="width: 100%;">
+          Entrar no Painel
+        </button>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ==========================================
+       PORTAL DO ESTUDANTE (DASHBOARD - ÁREA LOGADA)
+       ========================================== -->
+  <section id="section-dashboard" class="section">
+    <div class="dashboard-layout">
+      <!-- Sidebar de Navegação -->
+      <aside class="dashboard-sidebar">
+        <div class="sidebar-brand">
+          <div class="logo-icon">E</div>
+          <div class="logo-text">EXATAS<span class="gradient-text">SemLimites</span></div>
+        </div>
+
+        <div style="margin-top: 10px;">
+          <h3 class="sidebar-menu-title">Matérias</h3>
+          <nav class="sidebar-nav" id="sidebar-areas-nav">
+            <!-- Gerado dinamicamente via JS -->
+          </nav>
+        </div>
+
+        <div style="margin-top: 20px;">
+          <h3 class="sidebar-menu-title">Interação</h3>
+          <nav class="sidebar-nav">
+            <button class="sidebar-nav-btn" id="btn-sidebar-forum" style="width: 100%; background: transparent; border: none; color: var(--text-secondary); text-align: left; padding: 12px 15px; border-radius: 10px; cursor: pointer; display: flex; align-items: center; gap: 10px; font-weight: 600; font-size: 0.95rem;">
+              <span>💬</span> Fórum de Dúvidas
+            </button>
+          </nav>
+        </div>
+
+        <div class="sidebar-footer">
+          <button class="btn btn-secondary" id="btn-dashboard-admin" style="font-size: 0.85rem; padding: 10px; width: 100%;">
+            🔧 Painel do Admin
+          </button>
+          <div class="user-badge">
+            <div class="user-avatar">AL</div>
+            <div class="user-info">
+              <div class="user-name">Aluno Confirmado</div>
+              <div class="user-status">● Acesso Ativo</div>
+            </div>
+            <button id="btn-logout" style="background: transparent; border: none; color: var(--text-muted); cursor: pointer; font-size: 1.1rem;" title="Voltar para a Página Inicial">🚪</button>
+          </div>
+        </div>
+      </aside>
+
+      <!-- Conteúdo Principal -->
+      <main class="dashboard-main">
+        <!-- Visualização Padrão de Materiais -->
+        <div id="dashboard-materials-view">
+          <div class="dashboard-header">
+            <div class="welcome-section">
+              <h2 id="dashboard-area-title">Matemática (Coleção FME)</h2>
+              <p>Selecione a categoria e clique nos materiais para estudar online ou baixar.</p>
+            </div>
+            <div class="dashboard-actions">
+              <input type="text" id="search-materials" placeholder="Buscar material..." class="form-input" style="width: 250px; padding: 10px 14px;">
+            </div>
+          </div>
+
+          <!-- Abas das Matérias Específicas -->
+          <div class="subjects-tabs-container" id="subjects-tabs-container">
+            <!-- Gerado dinamicamente via JS -->
+          </div>
+
+          <!-- Lista de Materiais -->
+          <div class="materials-grid" id="materials-grid">
+            <!-- Gerado dinamicamente via JS -->
+          </div>
+        </div>
+
+        <!-- Visualização do Fórum -->
+        <div id="dashboard-forum-view" style="display: none;">
+          <div class="dashboard-header">
+            <div class="welcome-section">
+              <h2>Fórum de Dúvidas</h2>
+              <p>Compartilhe questões, debata resoluções e interaja com outros alunos premium.</p>
+            </div>
+          </div>
+          
+          <div class="forum-grid-layout">
+            <div class="forum-sidebar-controls">
+              <input type="text" id="forum-search-input" placeholder="Pesquisar discussões..." class="form-input" style="width: 100%; margin-bottom: 15px;">
+              
+              <div class="forum-filters-box">
+                <h4 style="font-size: 0.85rem; text-transform: uppercase; color: var(--text-muted); margin-bottom: 10px; font-weight: 700; letter-spacing: 0.5px;">Disciplinas</h4>
+                <div class="forum-cats-list">
+                  <button class="forum-cat-btn active" data-forum-cat="all">Todas as Matérias</button>
+                  <button class="forum-cat-btn" data-forum-cat="matematica">Matemática</button>
+                  <button class="forum-cat-btn" data-forum-cat="fisica">Física</button>
+                  <button class="forum-cat-btn" data-forum-cat="quimica">Química</button>
+                  <button class="forum-cat-btn" data-forum-cat="geral">Geral / Dicas</button>
+                </div>
+              </div>
+
+              <button class="btn btn-primary" id="btn-trigger-new-post" style="width: 100%; margin-top: 15px; padding: 12px;">
+                ➕ Criar Nova Dúvida
+              </button>
+            </div>
+
+            <div class="forum-feed-container">
+              <div class="forum-empty-state" id="forum-empty-state" style="display: none;">
+                <p style="text-align: center; padding: 40px; color: var(--text-secondary);">Nenhuma dúvida encontrada nesta categoria.</p>
+              </div>
+              <div class="forum-posts-list" id="forum-posts-container">
+                <!-- Gerado dinamicamente via JS -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       PAINEL DO ADMINISTRADOR (GESTÃO DE CONTEÚDO)
+       ========================================== -->
+  <section id="section-admin" class="section">
+    <div style="max-width: 1200px; margin: 0 auto; padding: 40px 5% 80px;">
+      <div class="admin-header">
+        <div>
+          <h1 style="font-size: 2rem;">Painel do Administrador</h1>
+          <p style="color: var(--text-secondary); margin-top: 4px;">Gerencie suas apostilas, preços, chave Pix e alunos cadastrados.</p>
+        </div>
+        <div style="display: flex; gap: 12px;">
+          <button class="btn btn-secondary" id="btn-admin-to-dashboard">Portal do Estudante</button>
+          <button class="btn btn-secondary" id="btn-admin-to-landing">Ver Site de Vendas</button>
+        </div>
+      </div>
+
+      <!-- Abas de Navegação do Painel Admin -->
+      <div class="admin-tabs-nav" style="display: flex; gap: 10px; border-bottom: 1px solid var(--border-color); margin-bottom: 30px;">
+        <button class="admin-tab-btn active" id="btn-tab-admin-content" style="background: transparent; border: none; padding: 12px 20px; color: var(--text-primary); font-weight: 600; cursor: pointer; position: relative;">Ajustes & Materiais</button>
+        <button class="admin-tab-btn" id="btn-tab-admin-users" style="background: transparent; border: none; padding: 12px 20px; color: var(--text-secondary); font-weight: 600; cursor: pointer; position: relative;">Gerenciar Alunos</button>
+      </div>
+
+      <!-- Aba 1: Conteúdo & Ajustes (Pane) -->
+      <div id="admin-tab-content-pane">
+        <div class="admin-grid">
+          <!-- Coluna Esquerda: Formulários -->
+          <div style="display: flex; flex-direction: column; gap: 30px;">
+            <!-- Configurações Gerais da Plataforma -->
+            <div class="glass-panel admin-card">
+              <h3 class="admin-card-title">Configurações de Venda</h3>
+              <form id="form-admin-config">
+                <div class="form-group">
+                  <label class="form-label" for="conf-product-name">Nome do Produto</label>
+                  <input type="text" id="conf-product-name" class="form-input" required>
+                </div>
+
+                <div class="form-row">
+                  <div class="form-group">
+                    <label class="form-label" for="conf-price">Preço de Venda (R$)</label>
+                    <input type="number" step="0.01" id="conf-price" class="form-input" required>
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label" for="conf-pix-key">Chave Pix</label>
+                    <input type="text" id="conf-pix-key" class="form-input" required>
+                  </div>
+                </div>
+
+                <div class="form-row">
+                  <div class="form-group">
+                    <label class="form-label" for="conf-receiver-name">Nome do Recebedor</label>
+                    <input type="text" id="conf-receiver-name" class="form-input" placeholder="Ex: João Silva" required>
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label" for="conf-city">Cidade do Recebedor</label>
+                    <input type="text" id="conf-city" class="form-input" placeholder="Ex: SAO PAULO" required>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="conf-hero-title">Título Principal da Landing Page</label>
+                  <textarea id="conf-hero-title" class="form-input" required rows="2"></textarea>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="conf-hero-subtitle">Subtítulo da Landing Page</label>
+                  <textarea id="conf-hero-subtitle" class="form-input" required rows="2"></textarea>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="conf-admin-password">Senha de Acesso do Admin</label>
+                  <input type="password" id="conf-admin-password" class="form-input" required>
+                </div>
+
+                <button type="submit" class="btn btn-primary" style="width: 100%;">Salvar Configurações</button>
+              </form>
+            </div>
+
+            <!-- Adicionar Novo Material -->
+            <div class="glass-panel admin-card">
+              <h3 class="admin-card-title" id="form-material-title-action">Cadastrar Nova Apostila / Resumo</h3>
+              <form id="form-admin-material">
+                <input type="hidden" id="edit-material-id" value="">
+
+                <div class="form-row">
+                  <div class="form-group">
+                    <label class="form-label" for="mat-area-select">Matéria (Exatas)</label>
+                    <select id="mat-area-select" class="form-input form-select" required>
+                      <option value="" disabled selected>Selecione...</option>
+                      <option value="matematica">Matemática (FME)</option>
+                      <option value="fisica">Física (TF)</option>
+                      <option value="quimica">Química (Poliedro)</option>
+                    </select>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="form-label" for="mat-subject-select">Matéria</label>
+                    <select id="mat-subject-select" class="form-input form-select" required disabled>
+                      <option value="" disabled selected>Escolha a área primeiro</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="mat-title">Título do Material</label>
+                  <input type="text" id="mat-title" class="form-input" placeholder="Ex: Apostila de Citologia Completa" required>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="mat-desc">Descrição / O que o aluno vai aprender</label>
+                  <textarea id="mat-desc" class="form-input" placeholder="Breve descrição do conteúdo..." rows="2" required></textarea>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="mat-url">Link do PDF (Google Drive / OneDrive / Externo)</label>
+                  <input type="text" id="mat-url" class="form-input" placeholder="https://drive.google.com/... ou coloque '#' para simular" required>
+                </div>
+
+                <div class="form-row">
+                  <div class="form-group">
+                    <label class="form-label" for="mat-type">Tipo de Arquivo</label>
+                    <select id="mat-type" class="form-input form-select" required>
+                      <option value="pdf">PDF (Apostila/Resumo)</option>
+                      <option value="video">Link de Videoaula</option>
+                      <option value="outro">Outro Recurso</option>
+                    </select>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="form-label" for="mat-size">Tamanho do Arquivo (Ex: 3.4 MB)</label>
+                    <input type="text" id="mat-size" class="form-input" placeholder="Ex: 2.1 MB" required>
+                  </div>
+                </div>
+
+                <div style="display: flex; gap: 10px;">
+                  <button type="submit" class="btn btn-primary" id="btn-submit-material" style="flex: 1;">Salvar Material</button>
+                  <button type="button" class="btn btn-secondary" id="btn-cancel-edit" style="display: none;">Cancelar</button>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <!-- Coluna Direita: Lista de Materiais e Backup -->
+          <div style="display: flex; flex-direction: column; gap: 30px;">
+            <!-- Listagem Geral de Materiais Cadastrados -->
+            <div class="glass-panel admin-card">
+              <h3 class="admin-card-title">Materiais na Plataforma (<span id="admin-materials-count">0</span>)</h3>
+              <div class="materials-list-container" id="admin-materials-list">
+                <!-- Gerado dinamicamente via JS -->
+              </div>
+            </div>
+
+            <!-- Exportação/Importação JSON -->
+            <div class="glass-panel admin-card">
+              <h3 class="admin-card-title">Backup e Prontidão de Venda</h3>
+              <p style="font-size: 0.9rem; margin-bottom: 20px;">Você pode exportar a base de dados contendo todos os seus materiais cadastrados e configurações. Substitua o conteúdo do arquivo <code>data-seed.js</code> pelo JSON exportado se quiser que o site comece sempre com esses dados hardcoded!</p>
+              
+              <div style="display: flex; flex-direction: column; gap: 12px;">
+                <button class="btn btn-secondary" id="btn-export-data" style="width: 100%;">
+                  📥 Exportar Dados como JSON
+                </button>
+                <div style="border-top: 1px solid var(--border-color); padding-top: 15px; margin-top: 5px;">
+                  <label class="form-label" for="import-json-file">Importar Banco de Dados (JSON)</label>
+                  <input type="file" id="import-json-file" accept=".json" class="form-input" style="padding: 8px;">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Aba 2: Gerenciar Alunos (Pane) -->
+      <div id="admin-tab-users-pane" style="display: none;">
+        <div class="admin-grid">
+          <!-- Coluna Esquerda: Cadastro de Alunos -->
+          <div class="glass-panel admin-card">
+            <h3 class="admin-card-title" id="form-user-title-action">Cadastrar Novo Aluno</h3>
+            <form id="form-admin-user">
+              <input type="hidden" id="edit-user-id" value="">
+
+              <div class="form-group">
+                <label class="form-label" for="user-name-input">Nome Completo</label>
+                <input type="text" id="user-name-input" class="form-input" placeholder="Ex: João da Silva" required>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="user-email-input">E-mail (Login)</label>
+                <input type="email" id="user-email-input" class="form-input" placeholder="Ex: joao@email.com" required>
+              </div>
+
+              <div class="form-group" style="margin-bottom: 25px;">
+                <label class="form-label" for="user-password-input">Senha de Acesso</label>
+                <input type="text" id="user-password-input" class="form-input" placeholder="Digite uma senha..." required>
+              </div>
+
+              <div class="form-group" style="margin-bottom: 25px;">
+                <label class="form-label" style="display: inline-flex; align-items: center; gap: 10px; cursor: pointer; user-select: none;">
+                  <input type="checkbox" id="user-unlocked-checkbox" checked style="width: 18px; height: 18px; cursor: pointer;">
+                  <span>Liberar Acesso (Pago / Ativo)</span>
+                </label>
+              </div>
+
+              <div style="display: flex; gap: 10px;">
+                <button type="submit" class="btn btn-primary" id="btn-submit-user" style="flex: 1;">Salvar Aluno</button>
+                <button type="button" class="btn btn-secondary" id="btn-cancel-user-edit" style="display: none;">Cancelar</button>
+              </div>
+            </form>
+          </div>
+
+          <!-- Coluna Direita: Lista de Alunos -->
+          <div class="glass-panel admin-card">
+            <h3 class="admin-card-title">Alunos Cadastrados (<span id="admin-users-count">0</span>)</h3>
+            <div class="materials-list-container" id="admin-users-list">
+              <!-- Gerado dinamicamente via JS -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+       VISUALIZADOR DE PDF INTEGRADO
+       ========================================== -->
+  <div id="pdf-viewer" class="pdf-viewer-overlay">
+    <div class="pdf-viewer-header">
+      <h3 id="pdf-viewer-title" style="font-size: 1.1rem; font-weight: 600;">Visualizando Material</h3>
+      <button class="btn btn-secondary btn-sm" id="btn-close-pdf" style="padding: 6px 12px;">Fechar Visualizador</button>
+    </div>
+    <div class="pdf-viewer-body" id="pdf-viewer-body-container">
+      <!-- Iframe ou painel informativo se link for vazio/simulado -->
+    </div>
+  </div>
+
+  <!-- ==========================================
+       MODAL: CRIAR NOVO POST NO FÓRUM
+       ========================================== -->
+  <div id="forum-new-post-modal" class="modal-overlay">
+    <div class="modal-container glass-panel" style="max-width: 500px;">
+      <div class="checkout-header">
+        <h3 style="font-size: 1.15rem;">Nova Discussão no Fórum</h3>
+        <button class="close-modal-btn" id="btn-close-forum-new-post">&times;</button>
+      </div>
+      <div class="checkout-body">
+        <form id="form-forum-new-post">
+          <div class="form-group" style="text-align: left;">
+            <label class="form-label" for="forum-post-title">Título da Dúvida</label>
+            <input type="text" id="forum-post-title" class="form-input" placeholder="Ex: Dúvida na questão 12 do FME..." required minlength="5">
+          </div>
+          
+          <div class="form-group" style="text-align: left;">
+            <label class="form-label" for="forum-post-category">Matéria/Categoria</label>
+            <select id="forum-post-category" class="form-input form-select" style="background-color: var(--bg-dark);" required>
+              <option value="" disabled selected>Selecione...</option>
+              <option value="matematica">Matemática</option>
+              <option value="fisica">Física</option>
+              <option value="quimica">Química</option>
+              <option value="geral">Geral / Dicas</option>
+            </select>
+          </div>
+
+          <div class="form-group" style="text-align: left; margin-bottom: 25px;">
+            <label class="form-label" for="forum-post-content">Explicação / Detalhes</label>
+            <textarea id="forum-post-content" class="form-input" rows="5" placeholder="Escreva sua pergunta..." required minlength="10"></textarea>
+          </div>
+
+          <div style="display: flex; gap: 10px;">
+            <button type="submit" class="btn btn-primary" style="flex: 1;">Publicar Dúvida</button>
+            <button type="button" class="btn btn-secondary" id="btn-cancel-forum-new-post">Cancelar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Lib Qrious para geração dinâmica de QR Code do Pix (rápida, leve e local) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrious/4.0.2/qrious.min.js"></script>
+  
+  <!-- Scripts do Projeto -->
+  <script src="data-seed.js"></script>
+  <script src="app.js?v=2"></script>
+</body>
+</html>
