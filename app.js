@@ -10,6 +10,11 @@ document.addEventListener("DOMContentLoaded", () => {
     localStorage.setItem("exatas_v2_config", JSON.stringify(config));
   }
   let materials = JSON.parse(localStorage.getItem("exatas_v2_materials")) || DEFAULT_MATERIALS_DATA;
+  // Forçar atualização se os caminhos forem do formato antigo com acentos ou pastas redundantes
+  if (materials.length > 0 && (materials[0].url.includes("estudos/") || materials[0].url.includes("MATEMÁTICA") || materials[0].url.includes("FÍSICA") || materials[0].url.includes("QUÍMICA"))) {
+    materials = DEFAULT_MATERIALS_DATA;
+    localStorage.setItem("exatas_v2_materials", JSON.stringify(materials));
+  }
   let users = JSON.parse(localStorage.getItem("exatas_v2_users")) || DEFAULT_USERS_DATA;
   let currentUser = JSON.parse(localStorage.getItem("exatas_v2_current_user")) || null;
   
@@ -412,7 +417,7 @@ document.addEventListener("DOMContentLoaded", () => {
           </div>
 
           <div style="text-align: center; border-top: 1px solid #e2e8f0; padding-top: 30px; margin-top: 40px;">
-            <a href="estudos/MATEMÁTICA/FME/Volume 1 - Conjuntos, Funções.pdf" target="_blank" class="btn btn-primary" style="display: inline-flex;">
+            <a href="MATEMATICA/FME/Volume 1 - Conjuntos, Funcoes.pdf" target="_blank" class="btn btn-primary" style="display: inline-flex;">
               Visualizar Livro Volume 1 Localmente
             </a>
           </div>
